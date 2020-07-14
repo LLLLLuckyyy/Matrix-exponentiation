@@ -1,0 +1,13 @@
+D:\з\Matrix exponentiation\bin\Debug\netcoreapp3.1\Matrix exponentiation.exe
+D:\з\Matrix exponentiation\bin\Debug\netcoreapp3.1\Matrix exponentiation.deps.json
+D:\з\Matrix exponentiation\bin\Debug\netcoreapp3.1\Matrix exponentiation.runtimeconfig.json
+D:\з\Matrix exponentiation\bin\Debug\netcoreapp3.1\Matrix exponentiation.runtimeconfig.dev.json
+D:\з\Matrix exponentiation\bin\Debug\netcoreapp3.1\Matrix exponentiation.dll
+D:\з\Matrix exponentiation\bin\Debug\netcoreapp3.1\Matrix exponentiation.pdb
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.csprojAssemblyReference.cache
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.csproj.CoreCompileInputs.cache
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.AssemblyInfoInputs.cache
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.AssemblyInfo.cs
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.dll
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.pdb
+D:\з\Matrix exponentiation\obj\Debug\netcoreapp3.1\Matrix exponentiation.genruntimeconfig.cache
