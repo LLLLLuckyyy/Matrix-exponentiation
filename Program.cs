@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlTypes;
 
 namespace Matrix_exponentiation
 {
@@ -15,12 +14,12 @@ namespace Matrix_exponentiation
             int[,] matrix = new int[n,n];
             int[,] keeper = new int[n,n];
 
-            matrix = initialization(matrix, n, false);
-            keeper = initialization(keeper, n, true);
+            Initialization(matrix, n, false);
+            Initialization(keeper, n, true);
             Console.WriteLine("Our Initialized matrix:\n");
             Display(matrix, n);
 
-            int[,] result = multiply(matrix, keeper, power, n);
+            int[,] result = Multiply(matrix, keeper, power, n);
             Console.WriteLine("Result of exponentiation:\n");
             Display(result, n);
         }
@@ -38,7 +37,7 @@ namespace Matrix_exponentiation
             Console.WriteLine("\n\n\n");
         }
 
-        static int[,] multiply(int[,] matrix, int[,] keeper, int power, int n)
+        static int[,] Multiply(int[,] matrix, int[,] keeper, int power, int n)
         {
             if (power <= 1 && cycles <= 0)
                 return matrix;
@@ -58,11 +57,11 @@ namespace Matrix_exponentiation
                         }
                     }
                 }
-                return multiply(matrix, keeper, power - 1, n);
+                return Multiply(matrix, keeper, power - 1, n);
             }
 
             int[,] temp = new int[n, n];
-            temp = initialization(temp, n, true);
+            Initialization(temp, n, true);
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -75,12 +74,12 @@ namespace Matrix_exponentiation
             }
             keeper = temp;
             cycles++;
-            return multiply(matrix, keeper, power - 1, n);
+            return Multiply(matrix, keeper, power - 1, n);
         }
 
-        static int[,] initialization(int[,] matrix,int n, bool iszero)
+        static void Initialization(int[,] matrix,int n, bool isZeroMatrix)
         {
-            if (iszero)
+            if (isZeroMatrix)
             {
                 for (int i = 0; i < n; i++)
                 {
@@ -101,7 +100,6 @@ namespace Matrix_exponentiation
                     }
                 }
             }
-            return matrix;
         }
     }
 }
